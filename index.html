@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Kauculadora IMC</title>
+
+</head>
+
+<body>
+    <section class="left">
+        <h1>O QUE É "IMC"?</h1>
+        <p>Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa Corporal, conhecido pela sigla IMC, é um cálculo simples que permite medir se alguém está ou não com o peso ideal.
+            <br/>
+            Ele aponta se o peso está adequado, abaixo ou acima do ideal.
+            <br/>
+            <br/>
+            O número final do cálculo IMC representa o quanto a pessoa tem de massa muscular + massa de gordura + massa óssea.
+            <br/>
+            <br/>
+            Para facilitar seu cálculo, coloque seu peso e sua altura em nossa calculadora e te daremos a resposta, se está abaixo do peso, no peso ideal, acima do peso ou se há obesidades seja de grau I ou grau II.</p>
+    </section>
+    <section class="right">
+        <div class="form">
+            <div>
+                <label for="peso">SEU PESO É:</label>
+                <input placeholder="Digite seu peso em kg" id="peso" min="1" max="299" type="number">
+            </div>
+            <div>
+                <label for="altura">SUA ALTURA É:</label>
+                <input placeholder="Digite sua altura em cm" id="altura" min="1" max="300" type="number">
+            </div>
+            <button onclick="calculaIMC()">CALCULAR</button>
+        </div>
+        <div class="images">
+            <img id="peso1" src="./imgs/peso1.svg" alt="Cuidado! Você está abaixo do peso.">
+            <img id="peso2" src="./imgs/peso2.svg" alt="Parabéns! Você está no peso ideal.">
+            <img id="peso3" src="./imgs/peso3.svg" alt="Você está acima do peso ideal.">
+            <img id="peso4" src="./imgs/peso4.svg" alt="Alerta! Você está com obesidade grau 1.">
+            <img id="peso5" src="./imgs/peso5.svg" alt="Cuide-se! Você está com obesidade grau 2.">
+        </div>
+    </section>
+</body>
+<script src="./index.js"></script>
+</html>
